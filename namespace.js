@@ -3,7 +3,7 @@ var TANV0001 = {
         let boxess = document.getElementById("boxes");
         let D = document.createElement("div");
         D.className = "box";
-        D.textContent= "croz0034";
+        D.textContent= "TANV0001";
         boxess.appendChild(cardBoard);
         D.addEventListener("click", Click);
         D.addEventListener("mouseover", Highlight);
@@ -11,7 +11,7 @@ var TANV0001 = {
       
         function Click(ev){
             ev.currentTarget.style.backgroundColor = "blue";
-            ev.currentTarget.style.borderColor = "orange";
+            ev.currentTarget.style.borderColor = "pink";
         }
         
         function Highlight(ev){
