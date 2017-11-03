@@ -1,24 +1,21 @@
 var TANV0001 = {
-
     init: function(){
-
-    var div = document.createElement("div");
-    div.className = "div";
-    div.textContent = "TANV0001";
-    document.getElementById("boxes").appendChild(div);
-
-    div.addEventListener("mouseover", BARI0053.mouse);
-    div.addEventListener("mouseout", BARI0053.mouse);
-    div.addEventListener("click", BARI0053.Click) 
-    },
-
-    mouse: function(ev){
-    ev.currentTarget.classList.toggle("highlight");
-    },
+        let boxess = document.getElementById("boxes");
+        let D = document.createElement("div");
+        D.className = "box";
+        D.textContent= "croz0034";
+        boxess.appendChild(cardBoard);
+        D.addEventListener("click", Click);
+        D.addEventListener("mouseover", Highlight);
+        D.addEventListener("mouseout", Highlight); 
+      
+        function Click(ev){
+            ev.currentTarget.style.backgroundColor = "blue";
+            ev.currentTarget.style.borderColor = "orange";
+        }
         
-    Click: function(ev){
-    ev.currentTarget.style.backgroundColor = "blue";
-    ev.currentTarget.style.borderColor = "pink";
-    },
-    
-    };
+        function Highlight(ev){
+            ev.currentTarget.classList.toggle("highlight");
+        }
+    }
+};
